@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>NetzWächter - Über Uns</title>
+</head>
+<body class="bg-gray-100">
+
+    <header class="fixed w-full bg-opacity-90 bg-gray-800 px-10 z-50 transition-colors duration-300">
+        <nav class=" max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html">
+                    <div class="flex items-center">
+                        <img src="img/logopng.png" alt="NetzWächter" class="w-8 h-8 mr-2">
+                        <div class="text-white text-xl font-bold">NetzWächter</div>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="endpoint.html" class="text-white hover:text-blue-400 transition-colors">Login</a>
+                    <a href="kontakt.html" class="text-white hover:text-blue-400 transition-colors">Kontakt</a>
+                    <a href="mega.html" class="text-white hover:text-blue-400 transition-colors">Uber Uns</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="border-b border-gray-200"></div>
+
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-white space-x-8">
+                    <a href="Leistung.html" class="text-white hover:text-blue-400 transition-colors">Leistungen</a>
+                    <a href="beitrage.html" class="text-white hover:text-blue-400 transition-colors">Beiträge & Tarife</a>
+                    <a href="Src/PowerPoint.pptx" class="text-white hover:text-blue-400 transition-colors">Powerpoint</a>            
+                </div>
+                <button onclick="window.location.href='mitglied.html'" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">Mitglied werden</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 container mx-auto p-4">
+        <!-- Disclaimer -->
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-8">
+            <p>Hinweis: Diese Geschichte und Personen beschriebungen sind nicht echt und dienen nur Demonstrationszwecken.</p>
+        </div>
+
+        <!-- Company Story -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Unsere Geschichte</h2>
+            <p class="text-gray-600 mb-4">
+                Im Jahr 2020, als die digitale Transformation durch die globale Pandemie einen enormen Schub erfuhr, erkannten drei IT-Sicherheitsexperten eine wichtige Lücke im Versicherungsmarkt: Den mangelnden Schutz für digitale Werte von Privatpersonen.
+                Joschi, ein erfahrener Cyber-Security-Analyst, Emil, ein Experte für Datenschutz, und Yougeen, ein Spezialist für digitale Forensik, beschlossen, ihre Expertise zu bündeln und gründeten NetzWächter.
+            </p>
+        </div>
+
+        <!-- Team Section -->
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Unser Team</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Joschi -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="img/personal/joshi.png" alt="Joschi" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Joschi</h3>
+                <p class="text-gray-600">CEO & Cyber-Security-Experte</p>
+                <p class="mt-2 text-gray-600">Mit 15 Jahren Erfahrung in der IT-Sicherheit leitet Joschi die technische Entwicklung unserer Schutzprogramme.</p>
+            </div>
+
+            <!-- Emil -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="img/personal/emil.png" alt="Emil" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Emil</h3>
+                <p class="text-gray-600">COO & Datenschutz-Experte</p>
+                <p class="mt-2 text-gray-600">Emil sorgt mit seinem Fachwissen für die Einhaltung aller Datenschutzrichtlinien und die Entwicklung präventiver Maßnahmen.</p>
+            </div>
+
+            <!-- Yougeen -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="img/personal/jo.png" alt="Yougeen" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Yougeen</h3>
+                <p class="text-gray-600">CTO & Digital Forensik Spezialist</p>
+                <p class="mt-2 text-gray-600">Yougeen leitet die Entwicklung unserer Schadensanalyse-Tools und koordiniert die technische Unterstützung im Schadensfall.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 NetzWächter. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

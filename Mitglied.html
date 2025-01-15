@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>NetzWächter - Ihre digitale Sicherheit</title>
+</head>
+<body>
+
+    <header class="fixed w-full bg-opacity-90 bg-gray-800 px-10 z-50 transition-colors duration-300">
+        <nav class=" max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html">
+                    <div class="flex items-center">
+                        <img src="img/logopng.png" alt="NetzWächter" class="w-8 h-8 mr-2">
+                        <div class="text-white text-xl font-bold">NetzWächter</div>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="endpoint.html" class="text-white hover:text-blue-400 transition-colors">Login</a>
+                    <a href="kontakt.html" class="text-white hover:text-blue-400 transition-colors">Kontakt</a>
+                    <a href="mega.html" class="text-white hover:text-blue-400 transition-colors">Uber Uns</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="border-b border-gray-200"></div>
+
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-white space-x-8">
+                    <a href="Leistung.html" class="text-white hover:text-blue-400 transition-colors">Leistungen</a>
+                    <a href="beitrage.html" class="text-white hover:text-blue-400 transition-colors">Beiträge & Tarife</a>
+                    <a href="Src/PowerPoint.pptx" class="text-white hover:text-blue-400 transition-colors">Powerpoint</a>                
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">Mitglied werden</button>
+            </div>
+        </nav>
+    </header>
+    <div class="py-16 bg-white"></div>
+    <section class="bg-white text-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hero Section -->
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl font-bold mb-4">
+                    <span class="text-blue-600">Jetzt zu NetzWächter wechseln</span> und<br>
+                    Mitglied werden
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Du willst dein digitale Sicherheit erhöhen? Profitiere jetzt  von umfangreichen Schutzleistungen und
+                    kompetentem Service rund um die Uhr. Jetzt in nur wenigen Minuten Mitglied.
+                </p>
+            </div>
+    
+            <!-- Postal Code Input -->
+            <div class="max-w-xl mx-auto mb-8">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input 
+                        type="text" 
+                        id="plzInput"
+                        placeholder="Ihre Postleitzahl" 
+                        class="flex-grow px-4 py-2 rounded bg-white border border-gray-300 focus:outline-none focus:border-blue-400">
+                    <button 
+                        id="weiterButton"
+                        class="bg-blue-500 text-white px-8 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                        Weiter →
+                    </button>
+                </div>
+                <p id="errorMessage" class="text-red-500 text-sm mt-2 hidden">
+                    Bitte geben Sie eine gültige Postleitzahl ein.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">
+                Postleitzahl eingeben, für individuellen Schutzplan.
+                </p>
+            </div>
+        </div>
+            <!-- Optional Background Image Section -->
+            <section class="relative py-2 max-w h-96 overflow-hidden">
+                <img src="img/bk2.jpg" alt="Cyber Security" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white-900"></div>
+            </section>
+        <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
+    
+            <!-- Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mt-24">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gray-700 rounded-full p-6 mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Onlineformular ausfüllen</h3>
+                    <p class="text-gray-300">
+                        Einfach deine Daten eingeben und das passende Schutzpaket auswählen.
+                    </p>
+                </div>
+    
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gray-700 rounded-full p-6 mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wir kümmern uns</h3>
+                    <p class="text-gray-300">
+                        Unser Expertenteam prüft deine Anfrage und bereitet dir ein persönlichen Plan vor.
+                    </p>
+                </div>
+    
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gray-700 rounded-full p-6 mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Willkommen bei NetzWächter</h3>
+                    <p class="text-gray-300">
+                        Du erhalst von uns die Bestätigung zu deiner Mitgliedschaft und Zugang zu allen Sicherheitsleistungen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <footer style="
+
+            background-color: #2C3E50;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+    ">
+        <p>&copy; 2025 NetzWächter. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+    document.getElementById('weiterButton').addEventListener('click', function() {
+        const plz = document.getElementById('plzInput').value.trim();
+        const errorMessage = document.getElementById('errorMessage');
+        
+        // Deutsche Postleitzahl validieren (5 Ziffern)
+        if (/^\d{5}$/.test(plz)) {
+            errorMessage.classList.add('hidden');
+            window.location.href = 'endpoint.html';
+        } else {
+            errorMessage.classList.remove('hidden');
+        }
+    });
+    </script>
+
+</body>
+</html>
